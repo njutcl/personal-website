@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 网页基础配置-->
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <!-- 让网页端口可以自适应 -->
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <!--模式Edge 模式告诉IE以最高级模式渲染文档，也就是任何IE版本都以当前版本所支持的最高级标准模式渲染，避免版本升级造成的影响。-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>注册</title>
+    <link type="text/css" href="css/signin.css" rel="stylesheet">
+
+
+</head>
+<body>
+<!--注册界面-->
+<div id="signin">
+    <form name="form1" method="post">
+        <div class="form">
+            <label for="name">用户名：</label><input type="text" id="name" size="20" required>
+        </div>
+        <div class="form">
+            <label for="pwd">密码：</label><input type="password" id="pwd" size="20" required></div>
+        <div class="form">
+            <label for="pwd1">确认密码：</label><input type="password" id="pwd1" size="20" required>
+        </div>
+        <fieldset>
+            <legend>个人资料</legend>
+            <div class="form">
+                <label>性别：</label><input type="radio" name="sex" value="男" checked required>男&nbsp;
+                <input type="radio" name="sex" value="女">女
+            </div>
+            <div class="form">
+                <label>兴趣爱好：</label>
+                <input type="checkbox" name="sport" value="on">体育&nbsp;
+                <input type="checkbox" name="film" value="on">电影
+                <input type="checkbox" name="subject" value="on">打游戏
+            </div>
+            <div class="form">
+                <label for="edu">学历：</label>
+                <select size="1" id="edu">
+                    <option>小学</option>
+                    <option>初中</option>
+                    <option>高中</option>
+                    <option selected="">本科</option>
+                    <option>硕士</option>
+                    <option>博士</option>
+                </select>
+            </div>
+            <div class="form">
+                <label for="qqnumber">qq号：</label><input type="text" id="qqnumber" size="20" pattern="[0-9]{10}">
+            </div>
+            <div class="form">
+                <label for="email" 邮箱：<input type="email" id="email" size="20" required>
+            </div>
+            <div class="form">
+                <label for="remark">个性签名：</label></div>
+    </form>
+    <br>
+    <textarea rows="3"  cols="40" id="remark"></textarea>
+</fieldset>
+
+<div class="form">
+    <input type="submit" value="提交" id="submit">
+    <input type="button" value="登录" id="login">
+
+</div>
+</form>
+</div>
+<script type="text/javascript" src="js/signin.js"></script>
+</body>
+</html>
