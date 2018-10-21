@@ -1,0 +1,63 @@
+
+/*课程表样式*/
+#study li{
+    margin-left:35%;
+
+}
+#term .selected{
+color: darkblue;
+}
+
+#study h2{
+text-align: center;
+}
+
+#subject{
+    margin:0 15%;
+    width: 70%;
+}
+#subject div{
+    display: none;
+}
+
+#subject table caption{
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+#subject table tr .edu {
+    color: #000000;
+text-align: center;
+ width: 100px;
+}
+
+#signin a:nth-child(2) {
+    color: #98e097;
+}
+
+/*移动端*/
+
+@media all and (max-width: 500px){
+
+
+    #d1,#study{
+        font-size: 0.6em;
+    }
+    #subject table {
+        font-size: 0.6em;
+    }
+    #subject table caption{
+        font-weight: bolder;
+        font-size: 1em;
+    }
+    #subject table tr .edu {
+
+        width: 40px;
+    }
+
+    #study li{
+        margin-left:30%;
+
+    }
+
+}

@@ -1,0 +1,11 @@
+header {
+    background-color: #37C7D4;
+}
+#signin a {
+    background-color: #98E0E6;
+}
+#signin a:hover,
+a:active {
+    color: #ff8500;
+    text-decoration: underline;
+}

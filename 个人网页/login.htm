@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 网页基础配置-->
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <!-- 让网页端口可以自适应 -->
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <!--模式Edge 模式告诉IE以最高级模式渲染文档，也就是任何IE版本都以当前版本所支持的最高级标准模式渲染，避免版本升级造成的影响。-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>登录</title>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+
+</head>
+
+<body>
+<!--登录界面-->
+    <div class="user">
+                        <img src="img/user.png" alt="user"/>
+                    </div>
+    <div class="login" >
+        <table>
+            <form>
+            </form>
+            <th colspan="3">登录</th>
+            <tr>
+                <td height="50" valign="middle">
+                        <tr>
+                            <td width="89" align="right"><span>用户:</span></td>
+                            <td width="147">
+                                <label>
+                                    <input type="text"  id="text1" size="12">
+                                </label>
+                            </td>
+                            <td width="138"></td>
+                        </tr>
+                        <td align="right"><span>密码:</span></td>
+                        <td>
+                            <input type="password" id="t2" size="12">
+                        </td>
+                        <td></td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center" valign="middle">
+                    <p>
+                        <label>
+                            <input type="checkbox" id="Checkbox1">记住登录状态</label>
+                            <p><a href="signin.htm">没有账号？点击这里注册</a></p>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center" valign="middle"><span id="rempassItem">请不要在公共场所使用！</span></td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center" valign="middle">
+                    <input type="submit" id="b1" value="提交" onclick="getinfo()">&nbsp
+                    <input type="reset"  id="b2" value="取消">
+                </td>
+            </tr>
+            </table>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

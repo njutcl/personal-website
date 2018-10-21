@@ -1,0 +1,181 @@
+/*body样式*/
+body {
+    background: #f2f2f2 url(../img/bg.jpg) no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+}
+
+
+/*导航栏样式*/
+
+header {
+    position:static;
+    height: 110px;
+}
+
+
+#logo img {
+    position: absolute;
+    margin-left: 100px;
+    width: 80px;
+    height: 80px;
+}
+
+#logo p {
+    float: right;
+}
+
+
+#details{
+    display: none;
+    position: absolute;
+    background: white;
+    margin-top: 50px;
+}
+
+/*时钟样式*/
+#dgtlClock {
+    margin-left: 200px;
+    font-size: 20px;
+}
+
+#signin {
+    float: right;
+    margin-top: 30px;
+}
+
+#signin>a {
+    text-align: center;
+    font-size: 20px;
+    line-height: 40px;
+    float: left;
+    width: 110px;
+    color: #000;
+    border-radius: 10px;
+    border: 2px solid black;
+    display: block;
+    text-decoration: none;
+    margin-right: 10px;
+    box-shadow: 5px 5px 5px #000000;
+}
+
+
+
+/*皮肤列表*/
+#skin li{
+    float: left;
+    margin-right: 10px;
+    list-style: none;
+    border: 1px solid black;
+    width: 15px;
+    height: 15px;
+}
+#skin{
+
+    margin: 60px 50px ;
+}
+#skin_0{
+    background-color:dodgerblue ;
+}
+#skin_1{
+    background-color:#BE46D8 ;
+}
+#skin_2{
+    background-color:#E44072 ;
+}
+#skin_3{
+    background-color: #37C7D4 ;
+}
+
+#skin_4{
+    background-color:#F9AF2A ;
+}
+#skin_5{
+    background-color: #B1D410 ;
+}
+
+
+
+/*  页脚   */
+footer {
+    height: 100px;
+    background-color: #778899;
+}
+
+footer p {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*移动端*/
+
+
+@media all and (max-width: 500px){
+
+    /*body样式*/
+body {
+    background: white;
+    background-size: 100% 100%;
+    margin: 0 auto;
+}
+
+
+/*导航栏样式*/
+
+header {
+    height: 200px;
+}
+
+
+#logo img {
+    margin-left: 30px;
+    width: 50px;
+    height: 50px;
+}
+    #dgtlClock {
+        margin-left: 90px;
+        font-size: 15px;
+    }
+
+
+
+#signin {
+    margin-top: 1px;
+}
+
+#signin a {
+    font-size: 0.6em;
+    line-height: 25px;
+    width: 45px;
+    border-radius: 5px;
+    border: 2px solid black;
+    box-shadow: 3px 3px 3px #000000;
+}
+
+/*皮肤*/
+    #skin{
+        margin: 120px 50px ;
+    }
+
+
+/*  页脚   */
+footer {
+    margin-top: 10px;
+    height: 70px;
+}
+
+footer p {
+    font-size: 0.6em;
+}
+
+}
